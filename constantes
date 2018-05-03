@@ -1,0 +1,14 @@
+volume_ar =  33.5103/2
+densidade_ar = 1.2922
+m0 = densidade_ar * volume_ar
+cneve = 0
+cisopor = 0.24
+kneve = 0
+kisopor = 0.033
+hs=10
+ta = -43.15 + 273.15
+Areaiglu = 4*pi*2**2/2
+Tmax = 60*60
+t0 = ta
+listaTempo = np.arange(0,Tmax,0.01)
+dp = 0.30
