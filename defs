@@ -1,0 +1,5 @@
+def var(t0,t):
+    Qq = 1000  # fonte constante de temperatura não humano
+    Qr = ((t0-ta) / ((kisopor*Areaiglu)/dp + 1/(kisopor*Areaiglu)))*t
+    dTdt = 1/m0*cisopor * (Qq - Qr)
+    return dTdt
