@@ -1,0 +1,13 @@
+from math import pi
+import numpy as np
+from scipy.integrate import odeint
+import matplotlib.pyplot as plt
+
+
+solucao = odeint(var,t0,listaTempo)
+TempC = [temp-273.15 for temp in solucao[:,0]]
+TempoH = [t/3600 for t in listaTempo]
+plt.plot(TempoH,TempC)
+plt.xlabel('Tempo (h)')
+plt.ylabel('Temperatura ºC')
+plt.show()
